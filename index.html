@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="game">
+      <div id="title"></div>
+      <div id="demo"></div>
+      <button onclick="start()" class="myButton" id="start">
+        Start Game
+      </button>
+      <input type="text" id="country" />
+      <h3 id="name">Country Name</h3>
+      <br /><br />
+      <div class="balloon blue">
+        <div class="star"></div>
+        <div class="face">
+          <div class="eye"></div>
+          <div class="mouth happy"></div>
+        </div>
+        <div class="triangle"></div>
+        <div class="string"></div>
+        <div class="box">
+          <div id="output">
+            <h1>60</h1>
+          </div>
+          <div>
+            <h6>SECONDS</h6>
+          </div>
+        </div>
+      </div>
+
+      <button class="myButton1" id="start1" onclick="checkOutput()">
+        Next
+      </button>
+    </div>
+    <div id="home">
+      <div id="player-area">
+        <div id="player">
+          <img id="img1" src="./images/dddd.png" alt="" style="width: 115px;" />
+        </div>
+        <div class="btn" id="player-1">
+          <img src="./images/house2.jpg" alt="" style="width: 120px;" />
+        </div>
+      </div>
+    </div>
+    <button id="imp" onclick="instructions()">
+      CLICK HERE FOR INSTRUCTIONS
+    </button>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; display: none;"
+        id="dialog3"
+        class="window"
+      >
+        <div id="san">
+          <a href="#" class="close agree"
+            ><img
+              src="./images/close-icon.png"
+              width="25"
+              style="float: right; margin-right: -25px; margin-top: -20px;"
+          /></a>
+
+          <p>
+            Donald wants to go home and You can help Donald by following the
+            instructions below:
+          </p>
+          <p>First Click on Start Game.</p>
+          <p>
+            60 seconds Timer will run and within 60 Seconds you need to answer
+            country names.
+          </p>
+          <p>
+            Country Name should start with Capital letters and Should start with
+            the alphabet displayed.
+          </p>
+          <p>Give the country name untill the Donald reach home</p>
+          <p>So make donald happy kids.</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; display: none;"
+        id="dialog"
+        class="window"
+      >
+        <div id="san">
+          <a href="#" class="close agree"
+            ><img
+              src="./images/close-icon.png"
+              width="25"
+              style="float: right; margin-right: -25px; margin-top: -20px;"
+          /></a>
+
+          <p>Yippee!!! Donald got home</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; display: none;"
+        id="dialog4"
+        class="window"
+      >
+        <div id="san">
+          <a href="#" class="close agree"
+            ><img
+              src="./images/close-icon.png"
+              width="25"
+              style="float: right; margin-right: -25px; margin-top: -20px;"
+          /></a>
+
+          <p>First Start the Game</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; display: none;"
+        id="dialog1"
+        class="window"
+      >
+        <div id="san">
+          <a href="#" class="close agree"
+            ><img
+              src="./images/close-icon.png"
+              width="25"
+              style="float: right; margin-right: -25px; margin-top: -20px;"
+          /></a>
+
+          <p>Time's Up</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <div id="boxes">
+      <div
+        style="top: 50%; left: 50%; display: none;"
+        id="dialog2"
+        class="window"
+      >
+        <div id="san">
+          <a href="#" class="close agree"
+            ><img
+              src="./images/close-icon.png"
+              width="25"
+              style="float: right; margin-right: -25px; margin-top: -20px;"
+          /></a>
+
+          <p>Oops!!! Wrong Name (Donald got Angry)</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+        id="mask"
+      ></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

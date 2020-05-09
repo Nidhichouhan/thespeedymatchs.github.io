@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+#player {
+  background-color: rgb(2, 35, 54);
+  height: 60px;
+  width: 60px;
+  position: relative;
+  left: 0px;
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: white;
+  opacity: 0.8;
+  padding-top: 10px;
+}
+
+#player-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 300px;
+  justify-content: flex-start;
+  height: 100px;
+  width: 200px;
+  margin-left: 150px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* #game {
+  padding-left: 300px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  height: 200px;
+  width: 100%;
+} */
+
+.myButton {
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: linear-gradient(to bottom, #071b33 5%, #043240 100%);
+  background-color: #071b33;
+  border-radius: 10px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: whitesmoke;
+  font-family: Verdana;
+  font-size: 15px;
+  padding: 10px 13px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  margin-left: 80px;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #043240 5%, #071b33 100%);
+  background-color: #043240;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton1 {
+  box-shadow: inset 0px 1px 3px 0px #f7690a;
+  background-color: #d13e08;
+  border-radius: 5px;
+  border: 1px solid #993303;
+  display: inline-block;
+  cursor: pointer;
+  color: #090529;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 11px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+  margin-left: 480px;
+  margin-top: 80px;
+}
+
+.myButton1:hover {
+  background-color: #e85d12;
+}
+
+.myButton1:active {
+  position: relative;
+  top: 1px;
+}
+
+.blue {
+  position: absolute;
+  background: rgb(2, 35, 54);
+  height: 80px;
+  width: 80px;
+  left: 80%;
+  top: 5%;
+}
+
+.triangle {
+  border-bottom: 14px solid rgb(2, 35, 54);
+}
+
+.string {
+  background: rgb(2, 35, 54);
+  border: 1px solid rgb(2, 35, 54);
+}
+
+.balloon {
+  border: 1px solid white;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: white;
+  border-radius: 50%;
+}
+
+.eye:after {
+  content: "";
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent whitesmoke whitesmoke transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 43%;
+  bottom: -14%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 50%;
+  top: 100%;
+  z-index: -1;
+}
+
+.box {
+  margin-left: 20%;
+  background: rgb(2, 35, 54);
+  height: 80px;
+  width: 100px;
+  margin-top: 150px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: larger;
+  color: #d1d1d1;
+}
+
+h6 {
+  padding-top: 0;
+  margin-top: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#time {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#demo {
+  font-size: 100px;
+  margin-top: 30px;
+  margin-left: 500px;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 50px;
+  color: #d1d1d1;
+}
+
+#country {
+  height: 10px;
+  width: 200px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: white solid;
+  margin-left: 210px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+#name {
+  height: 80px;
+  margin-left: 460px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #26262c;
+  display: none;
+}
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 850px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+.agree:hover {
+  background-color: #d1d1d1;
+}
+
+.popupoption:hover {
+  background-color: #d1d1d1;
+  color: green;
+}
+
+.popupoption2:hover {
+  color: red;
+}
+
+#boxes #dialog1 {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+#boxes #dialog2 {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+#boxes #dialog3 {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+#boxes #dialog4 {
+  width: 450px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  font-size: 15pt;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: content-box;
+  font-size: larger;
+  text-align: center;
+  border: none;
+  background: rgba(3, 73, 105, 0.2);
+  color: whitesmoke;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(3, 73, 105, 0.2);
+}
+
+body {
+  background-image: url("./images/map10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#player-area {
+  /* background-image: url("./images/walkthrough.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100px;
+  width: 1000px;
+}
+
+#game {
+  background-color: rgba(3, 73, 105, 0.7);
+  padding-top: 30px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  margin-left: 90px;
+  margin-right: 100px;
+}
+
+#home {
+  background-color: white;
+  opacity: 0.9;
+}
+
+#player-1 {
+  padding-top: 20px;
+}
+
+#imp {
+  margin-top: 10px;
+  background-color: rgba(3, 73, 105, 0.1);
+  border: none;
+  color: lightgrey;
+}
